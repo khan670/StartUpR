@@ -3,7 +3,7 @@ import { ServicesData } from "../../data/Services";
 
 const Services: React.FC = () => {
   return (
-    <div className="flex justify-evenly items-center px-16 mt-20 ">
+    <div className="flex justify-evenly gap-20 items-center px-16 mt-20 ">
       <div className="w-1/2 flex flex-col gap-6 items-start">
         <h3 className="text-color-theme text-sm font-medium flex gap-1 items-center">
           OUR SERVICES <img src="/divider.png" alt="" />
@@ -15,7 +15,7 @@ const Services: React.FC = () => {
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.
         </p>
-        <button className=" rounded-custom-radius bg-color-theme px-5 py-3 hover:bg-color-body transition-all   text-white">
+        <button className=" rounded-custom-radius shadow bg-color-theme px-5 py-3 hover:bg-color-body transition-all   text-white">
           Our Services
         </button>
       </div>
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
             <div
               key={index}
               className={`${
-                index === 1 || index === 3 ? "relative top-10" : ""
+                index === 1 || index === 3 ? "relative top-12" : ""
               } flex flex-col items-center gap-3`}
             >
               <span

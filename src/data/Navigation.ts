@@ -27,7 +27,7 @@ export const NavigationData = [
   {
     id: 5,
     title: "Projects",
-    url: "#projects",
+    url: "#workflow",
   },
   {
     id: 6,
