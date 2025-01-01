@@ -6,6 +6,7 @@ import Product from "./components/Products/Product";
 import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import WorkFlow from "./components/WorkFlow/WorkFlow";
+import Testimonial from "./components/Testimonials/Testimonial";
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <Team />
       </div>
       <WorkFlow />
+      <Testimonial />
     </>
   );
 };
