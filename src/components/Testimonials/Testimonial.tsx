@@ -15,10 +15,6 @@ const Testimonial: React.FC = () => {
     verticalSwiping: true,
     swipeToSlide: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: false,
-    pauseOnFocus: false,
   };
   return (
     <div className="flex justify-between px-16 items-center mt-32 relative z-20">
