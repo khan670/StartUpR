@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Team: React.FC = () => {
   return (
     <div className="px-16 flex gap-20  h-[90vh] mt-20 ">
@@ -45,7 +45,16 @@ const Team: React.FC = () => {
           className="absolute top-52 right-52 animate-scaleUpDown delay-4000"
         />
       </div>
-      <div className="w-1/2 mt-20 flex flex-col gap-10 items-start relative z-30">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0, transform: "translateX(100px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0px)",
+          transition: { duration: 0.7, delay: 0.5 },
+        }}
+        className="w-1/2 mt-20 flex flex-col gap-10 items-start relative z-30"
+      >
         <h3 className="text-color-theme text-xs font-medium flex gap-2 items-end ">
           OUR TEAM <img src="/divider.png" />
         </h3>
@@ -59,7 +68,7 @@ const Team: React.FC = () => {
         <button className=" rounded-custom-radius shadow bg-color-theme px-5 py-4 hover:bg-color-body transition-all   text-white">
           Meet our team
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };

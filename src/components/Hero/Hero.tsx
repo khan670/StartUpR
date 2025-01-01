@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaPlayCircle,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import { LuGithub } from "react-icons/lu";
 
 const Hero: React.FC = () => {
@@ -25,17 +26,37 @@ const Hero: React.FC = () => {
           className="h-full relative"
         >
           <div className="absolute top-1/2 left-20 w-1/3  transform  -translate-y-1/2">
-            <h1 className="text-6xl font-extrabold text-color-body leading-[1.2] ">
+            <motion.h1
+              initial={{ transform: "translateX(100px)", opacity: 0 }}
+              animate={{ transform: "translateX(0px)", opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="text-6xl font-extrabold text-color-body leading-[1.2] "
+            >
               Content is <span className="text-color-theme"> fire </span> Social
               media is <span className="text-color-theme"> gasoline. </span>
-            </h1>
-            <span className="inline-block w-1/5 h-[2px] mt-8 bg-color-body"></span>
-            <p className="text-sm text-color-text mt-8 leading-6">
+            </motion.h1>
+            <motion.span
+              initial={{ transform: "translateX(100px)", opacity: 0 }}
+              animate={{ transform: "translateX(0px)", opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="inline-block w-1/5 h-[2px] mt-8 bg-color-body"
+            ></motion.span>
+            <motion.p
+              initial={{ transform: "translateY(100px)", opacity: 0 }}
+              animate={{ transform: "translateY(0px)", opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="text-sm text-color-text mt-8 leading-6"
+            >
               In an age where everything and everyone is linked through networks
               of glass and air organization, government agency, country are an
               island. We need to do right by all our stakeholders.
-            </p>
-            <div className="mt-7 flex items-center gap-10">
+            </motion.p>
+            <motion.div
+              initial={{ transform: "translateY(100px)", opacity: 0 }}
+              animate={{ transform: "translateY(0px)", opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-7 flex items-center gap-10"
+            >
               <div
                 className="
                relative 
@@ -52,7 +73,7 @@ const Hero: React.FC = () => {
               <button className="rounded-custom-radius shadow bg-color-body px-5 py-3 hover:bg-color-theme transition-all text-white">
                 Start Project
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="absolute flex items-center gap-3 bottom-3 right-32">

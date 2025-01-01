@@ -1,9 +1,22 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const About: React.FC = () => {
   return (
     <div className="px-10 flex gap-10">
-      <div className="w-1/2">
+      <div className="w-1/2 relative">
+        <motion.div
+          initial={{
+            width: 0,
+            opacity: 0,
+          }}
+          animate={{
+            width: "100%",
+            opacity: 1,
+          }}
+          whileInView={{ opacity: 1, width: "0%" }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="absolute w-full h-full bg-color-body  top-0 right-0"
+        ></motion.div>
         <img src="/about1.png" alt="" />
       </div>
       <div

@@ -7,6 +7,8 @@ import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import WorkFlow from "./components/WorkFlow/WorkFlow";
 import Testimonial from "./components/Testimonials/Testimonial";
+import Inspiration from "./components/Inspiration/Inspiration";
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +28,8 @@ const App: React.FC = () => {
       </div>
       <WorkFlow />
       <Testimonial />
+      <Inspiration />
+      <Footer />
     </>
   );
 };

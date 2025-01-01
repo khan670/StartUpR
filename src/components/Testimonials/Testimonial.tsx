@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import { testimonialsData } from "../../data/Testimonial";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 
 const Testimonial: React.FC = () => {
   const ref = useRef<any>(null);
@@ -18,7 +19,15 @@ const Testimonial: React.FC = () => {
   };
   return (
     <div className="flex justify-between px-16 items-center mt-32 relative z-20">
-      <div className=" w-1/2 flex flex-col gap-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 0.7, delay: 0.5 },
+        }}
+        className=" w-1/2 flex flex-col gap-5"
+      >
         <h3 className="text-sm font-medium tracking-wider text-color-theme flex gap-1 items-center ">
           Testimonials <img src="/divider.png" alt="" />
         </h3>
@@ -37,7 +46,7 @@ const Testimonial: React.FC = () => {
             className="text-gray-300  hover:text-color-theme transition-all duration-300  cursor-pointer"
           />
         </div>
-      </div>
+      </motion.div>
       <Slider className="w-1/2" {...settings} ref={ref}>
         {testimonialsData.map((item) => (
           <div className="flex flex-col items-center w-full">

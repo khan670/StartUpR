@@ -10,6 +10,7 @@ export default {
         "color-body": "#293B5F",
         "color-theme": "#FC4D4A",
         "color-text": "#7A7A7A",
+        "color-footer": "#EAF1FF",
       },
       borderRadius: {
         "custom-radius": "15px 0px 15px 15px",

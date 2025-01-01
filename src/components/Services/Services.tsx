@@ -1,10 +1,19 @@
 import React from "react";
 import { ServicesData } from "../../data/Services";
-
+import { motion } from "framer-motion";
 const Services: React.FC = () => {
   return (
     <div className="flex justify-evenly gap-20 items-center px-16 mt-20 ">
-      <div className="w-1/2 flex flex-col gap-6 items-start">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0, transform: "translateY(20px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: { duration: 0.5, delay: 0.5 },
+        }}
+        className="w-1/2 flex flex-col gap-6 items-start"
+      >
         <h3 className="text-color-theme text-sm font-medium flex gap-1 items-center">
           OUR SERVICES <img src="/divider.png" alt="" />
         </h3>
@@ -18,12 +27,19 @@ const Services: React.FC = () => {
         <button className=" rounded-custom-radius shadow bg-color-theme px-5 py-3 hover:bg-color-body transition-all   text-white">
           Our Services
         </button>
-      </div>
+      </motion.div>
       <div className="w-1/2 grid grid-cols-2 gap-10">
         {ServicesData.map((item, index) => {
           const Icon = item.icon;
           return (
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0, transform: "translateY(20px)" }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateY(0px)",
+                transition: { duration: 0.5, delay: 0.5 },
+              }}
               key={index}
               className={`${
                 index === 1 || index === 3 ? "relative top-12" : ""
@@ -41,7 +57,7 @@ const Services: React.FC = () => {
               <p className="text-base text-color-text text-center">
                 {item.text}
               </p>
-            </div>
+            </motion.div>
           );
         })}
       </div>
