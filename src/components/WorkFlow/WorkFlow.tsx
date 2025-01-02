@@ -1,6 +1,7 @@
 import React from "react";
 import { WorkFlowData } from "../../data/WorkFlow";
 import { motion } from "framer-motion";
+import SectionHeading from "../SectionHeading";
 const WorkFlow: React.FC = () => {
   return (
     <div className="my-20 relative" id="workflow">
@@ -20,9 +21,10 @@ const WorkFlow: React.FC = () => {
         className="flex justify-center flex-col items-center gap-2  text-center relative z-30"
       >
         <h3 className="text-sm text-color-theme font-semibold">WORKFLOW</h3>
-        <h1 className="text-5xl text-color-body font-bold -mt-2 w-2/3 ">
-          People don’t buy what you do, they buy why you do it.
-        </h1>
+        <SectionHeading
+          text=" People don’t buy what you do, they buy why you do it."
+          className="w-2/3 -mt-2"
+        />
         <img src="/divider.png" alt="" className="mt-2" />
       </motion.div>
       <div className="flex justify-evenly flex-wrap items-center mt-10 relative z-20">

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeading from "../SectionHeading";
 const About: React.FC = () => {
   return (
     <div className="px-10 flex gap-10">
@@ -26,9 +27,7 @@ const About: React.FC = () => {
         <h2 className="text-color-theme uppercase text-sm font-medium flex gap-1 items-center">
           Company profile <img src="/divider.png" alt="" />
         </h2>
-        <h1 className="text-5xl leading-[1.3] text-color-body font-bold ">
-          Content marketing is a commitment, not a campaign
-        </h1>
+        <SectionHeading text="Content marketing is a commitment, not a campaign" />
         <p className="text-base text-color-text leading-[1.6] ">
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.

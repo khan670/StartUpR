@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Logo";
 import { NavigationData } from "../../data/Navigation";
+import Button from "../Button";
 
 const Navigation: React.FC = () => {
   return (
@@ -17,9 +18,11 @@ const Navigation: React.FC = () => {
         <p className="text-sm font-semibold text-white">
           Contect Us +12 348.247.2548
         </p>
-        <button className="rounded-custom-radius bg-color-theme px-5 py-3 hover:bg-color-body transition-all   text-white">
-          Contect Us
-        </button>
+        <Button
+          text="Let's Talk"
+          bgColor="bg-color-theme"
+          hover="bg-color-body"
+        />
       </div>
     </header>
   );

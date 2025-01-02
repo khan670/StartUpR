@@ -1,6 +1,8 @@
 import React from "react";
 import { ServicesData } from "../../data/Services";
 import { motion } from "framer-motion";
+import Button from "../Button";
+import SectionHeading from "../SectionHeading";
 const Services: React.FC = () => {
   return (
     <div className="flex justify-evenly gap-20 items-center px-16 mt-20 ">
@@ -17,16 +19,16 @@ const Services: React.FC = () => {
         <h3 className="text-color-theme text-sm font-medium flex gap-1 items-center">
           OUR SERVICES <img src="/divider.png" alt="" />
         </h3>
-        <h1 className="text-5xl leading-[1] text-color-body font-bold ">
-          People don’t buy what you do, they buy why you do it.
-        </h1>
+        <SectionHeading text="People don’t buy what you do, they buy why you do it." />
         <p className=" text-color-text">
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.
         </p>
-        <button className=" rounded-custom-radius shadow bg-color-theme px-5 py-3 hover:bg-color-body transition-all   text-white">
-          Our Services
-        </button>
+        <Button
+          text="Our Services"
+          bgColor="bg-color-theme"
+          hover="bg-color-body"
+        />
       </motion.div>
       <div className="w-1/2 grid grid-cols-2 gap-10">
         {ServicesData.map((item, index) => {

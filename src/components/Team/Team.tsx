@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "../Button";
+import SectionHeading from "../SectionHeading";
 const Team: React.FC = () => {
   return (
     <div className="px-16 flex gap-20  h-[90vh] mt-20 ">
@@ -53,21 +55,23 @@ const Team: React.FC = () => {
           transform: "translateX(0px)",
           transition: { duration: 0.7, delay: 0.5 },
         }}
-        className="w-1/2 mt-20 flex flex-col gap-10 items-start relative z-30"
+        className="w-1/2 mt-20 flex flex-col gap-5 items-start relative z-30"
       >
         <h3 className="text-color-theme text-xs font-medium flex gap-2 items-end ">
           OUR TEAM <img src="/divider.png" />
         </h3>
-        <h1 className="text-4xl text-color-body font-bold w-3/4">
-          An essential aspect of creativity is not being afraid to fail.
-        </h1>
+
+        <SectionHeading text="An essential aspect of creativity is not being afraid to fail." />
         <p className="text-sm text-color-text w-3/4">
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.
         </p>
-        <button className=" rounded-custom-radius shadow bg-color-theme px-5 py-4 hover:bg-color-body transition-all   text-white">
-          Meet our team
-        </button>
+
+        <Button
+          text="Meet our team"
+          bgColor="bg-color-theme"
+          hover="bg-color-body"
+        />
       </motion.div>
     </div>
   );

@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { LuGithub } from "react-icons/lu";
+import Button from "../Button";
 
 const Hero: React.FC = () => {
   return (
@@ -70,9 +71,12 @@ const Hero: React.FC = () => {
                   size={50}
                 />
               </div>
-              <button className="rounded-custom-radius shadow bg-color-body px-5 py-3 hover:bg-color-theme transition-all text-white">
-                Start Project
-              </button>
+
+              <Button
+                text=" Start Project"
+                bgColor="bg-color-body"
+                hover="bg-color-theme "
+              />
             </motion.div>
           </div>
         </div>

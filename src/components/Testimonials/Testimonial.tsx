@@ -5,6 +5,7 @@ import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import { testimonialsData } from "../../data/Testimonial";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import SectionHeading from "../SectionHeading";
 
 const Testimonial: React.FC = () => {
   const ref = useRef<any>(null);
@@ -31,9 +32,10 @@ const Testimonial: React.FC = () => {
         <h3 className="text-sm font-medium tracking-wider text-color-theme flex gap-1 items-center ">
           Testimonials <img src="/divider.png" alt="" />
         </h3>
-        <h1 className="text-5xl text-color-body leading-[1.2] font-extrabold w-3/4 ">
-          Authenticity, honesty, & personal voice
-        </h1>
+        <SectionHeading
+          text="Authenticity, honesty, & personal voice"
+          className="w-3/4"
+        />
         <div className="flex gap-5 items-center">
           <IoIosArrowRoundBack
             size={50}
