@@ -5,6 +5,7 @@ StartUpR is a fully responsive, clean, and modern HTML template designed specifi
 ## Features
 
 ### Modern and Clean UI/UX Design
+<<<<<<< HEAD
 
 A visually appealing layout that enhances user engagement, designed to attract and hold the attention of your target audience.
 
@@ -25,6 +26,24 @@ StartUpR includes the following key sections to build a compelling and professio
 
 ### Custom Animations
 
+=======
+A visually appealing layout that enhances user engagement, designed to attract and hold the attention of your target audience.
+
+### Fully Responsive Layout
+StartUpR works flawlessly on all screen sizes, ensuring a smooth experience across mobile, tablet, and desktop devices.
+
+### Essential Sections
+StartUpR includes the following key sections to build a compelling and professional website:
+
+- **Hero Section**: A bold statement and a prominent Call-to-Action (CTA) button to direct users towards the desired action.
+- **About Us**: Showcase your company’s mission, values, and vision to build trust with your audience.
+- **Services**: Highlight the key offerings of your brand in an organized and user-friendly way.
+- **Partners**: A carousel section to display collaborations with renowned brands, emphasizing credibility and partnership.
+- **Testimonials**: A section to display client feedback and success stories, building social proof.
+- **Footer**: Includes navigation links, social media icons, and contact information for easy access to relevant details.
+
+### Custom Animations
+>>>>>>> 6780df2cce0ecb60d7e3ccd0ab9d58d1dbe749b7
 Smooth transitions and animations are integrated throughout the website to enhance the user experience, making interactions more engaging and seamless.
 
 ## Technologies Used
@@ -47,4 +66,7 @@ To get started with the project, clone the repository and install the necessary 
 git clone https://github.com/your-username/startupR.git
 cd startupR
 npm install
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 6780df2cce0ecb60d7e3ccd0ab9d58d1dbe749b7
