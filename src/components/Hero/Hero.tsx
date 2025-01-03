@@ -83,12 +83,20 @@ const Hero: React.FC = () => {
           <span className="hover:bg-color-theme p-2 cursor-pointer transition-all inline-block rounded-full hover:text-white text-color-text">
             <FaFacebookF size={18} />
           </span>
-          <span className="hover:bg-color-theme p-2 inline-block rounded-full cursor-pointer transition-all hover:text-white text-color-text">
+          <a
+            href="https://github.com/khan670"
+            target="_blank"
+            className="hover:bg-color-theme p-2 inline-block rounded-full cursor-pointer transition-all hover:text-white text-color-text"
+          >
             <LuGithub size={18} />
-          </span>
-          <span className="hover:bg-color-theme p-2 cursor-pointer transition-all inline-block rounded-full hover:text-white text-color-text">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rayankhandev"
+            target="_blank"
+            className="hover:bg-color-theme p-2 cursor-pointer transition-all inline-block rounded-full hover:text-white text-color-text"
+          >
             <FaLinkedinIn size={18} />
-          </span>
+          </a>
           <span className="hover:bg-color-theme p-2 inline-block rounded-full cursor-pointer transition-all hover:text-white text-color-text">
             <FaInstagram size={18} />
           </span>
