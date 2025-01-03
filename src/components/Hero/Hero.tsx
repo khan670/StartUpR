@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           style={{
             backgroundPosition: "center center",
           }}
-          className="h-full relative md:bg-[url('hero2-bg.webp')] bg-none"
+          className="h-full relative bg-cover md:bg-[url('hero2-bg.webp')] bg-none"
         >
           <div className="absolute sm:top-2/3 top-[22rem] sm:left-20 left-10 md:w-1/3 w-3/4  transform  -translate-y-1/2">
             <motion.h1
