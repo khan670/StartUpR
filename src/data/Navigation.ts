@@ -16,8 +16,8 @@ export const NavigationData = [
   },
   {
     id: 4,
-    title: "Contact",
-    url: "#contact",
+    title: "Product",
+    url: "#product",
   },
   {
     id: 4,
@@ -26,7 +26,7 @@ export const NavigationData = [
   },
   {
     id: 5,
-    title: "Projects",
+    title: "Workflow",
     url: "#workflow",
   },
   {

@@ -9,7 +9,7 @@ import Logo from "../Logo";
 
 const Footer: React.FC = () => {
   return (
-    <div className="relative bg-color-footer py-32">
+    <footer className="relative bg-color-footer py-32">
       <img src="/waves-top.png" alt="" className="w-full absolute top-0" />
       <img
         src="/waves-bottom.png"
@@ -34,17 +34,17 @@ const Footer: React.FC = () => {
         </h1>
         <form
           action=""
-          className="flex justify-center items-center gap-5 mt-10"
+          className="flex justify-center sm:flex-row flex-col items-center gap-5 mt-10"
         >
           <InputField type="text" placeholder="Full Name" />
           <InputField type="email" placeholder="Email Address" />
-          <button className="bg-color-theme px-3 py-3 rounded-full hover:bg-color-body transition-all   text-white">
+          <button className="bg-color-theme px-3 py-3 rounded-full hover:bg-color-body transition-all text-white">
             <IoIosSend size={30} />
           </button>
         </form>
-        <div className="flex justify-evenly mt-20">
+        <div className="flex justify-evenly sm:flex-row flex-col sm:px-0 px-5 mx-auto mt-20">
           {FooterData.map((value) => (
-            <div>
+            <div className="sm:mt-0 mt-4 ">
               <h2 className="text-lg font-semibold text-color-body ">
                 {value.heading}
               </h2>
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
           reserved
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

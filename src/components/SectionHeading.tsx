@@ -8,7 +8,7 @@ interface PropType {
 const SectionHeading: React.FC<PropType> = ({ text, className }) => {
   return (
     <h1
-      className={`${className} text-5xl leading-[1.3] text-color-body font-bold `}
+      className={`${className} md:text-5xl text-2xl leading-[1.3] text-color-body font-bold `}
     >
       {text}
     </h1>

@@ -5,7 +5,10 @@ import Button from "../Button";
 import SectionHeading from "../SectionHeading";
 const Services: React.FC = () => {
   return (
-    <div className="flex justify-evenly gap-20 items-center px-16 mt-20 ">
+    <section
+      className="flex lg:flex-row flex-col justify-evenly gap-20 items-center sm:px-16 px-5 mt-20 "
+      id="services"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0, transform: "translateY(20px)" }}
@@ -14,7 +17,7 @@ const Services: React.FC = () => {
           transform: "translateY(0px)",
           transition: { duration: 0.5, delay: 0.5 },
         }}
-        className="w-1/2 flex flex-col gap-6 items-start"
+        className=" lg:w-1/2 w-full flex flex-col gap-6 items-start"
       >
         <h3 className="text-color-theme text-sm font-medium flex gap-1 items-center">
           OUR SERVICES <img src="/divider.png" alt="" />
@@ -30,7 +33,7 @@ const Services: React.FC = () => {
           hover="bg-color-body"
         />
       </motion.div>
-      <div className="w-1/2 grid grid-cols-2 gap-10">
+      <div className="lg:w-1/2 w-full grid sm:grid-cols-2 grid-cols-1  gap-10">
         {ServicesData.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -44,7 +47,7 @@ const Services: React.FC = () => {
               }}
               key={index}
               className={`${
-                index === 1 || index === 3 ? "relative top-12" : ""
+                index === 1 || index === 3 ? "sm:relative top-12" : ""
               } flex flex-col items-center gap-3`}
             >
               <span
@@ -63,7 +66,7 @@ const Services: React.FC = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

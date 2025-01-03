@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import SectionHeading from "../SectionHeading";
 const About: React.FC = () => {
   return (
-    <div className="px-10 flex gap-10">
-      <div className="w-1/2 relative">
+    <section
+      className="sm:px-16 px-5 flex mt-20 sm:mt-10 items-center gap-10 lg:flex-row flex-col"
+      id="about"
+    >
+      <div className="lg:w-1/2 w-full relative">
         <motion.div
           initial={{
             width: 0,
@@ -21,7 +24,7 @@ const About: React.FC = () => {
         <img src="/about1.png" alt="" />
       </div>
       <div
-        className="bg-[url('/quote.png')] bg-no-repeat w-1/2 flex flex-col gap-5  "
+        className="bg-[url('/quote.png')] bg-no-repeat lg:w-1/2 w-full flex flex-col gap-5  "
         style={{ backgroundPosition: "left bottom" }}
       >
         <h2 className="text-color-theme uppercase text-sm font-medium flex gap-1 items-center">
@@ -40,7 +43,7 @@ const About: React.FC = () => {
         </h1>
         <img src="/signature.png" className="object-cover" width={400} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

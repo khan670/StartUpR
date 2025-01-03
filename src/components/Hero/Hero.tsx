@@ -12,26 +12,25 @@ import Button from "../Button";
 const Hero: React.FC = () => {
   return (
     <>
-      <div
+      <section
         style={{
-          backgroundImage: "url('/hero1-bg.png')",
           backgroundPosition: "top right",
         }}
-        className="h-[110vh]  bg-cover"
+        className="h-screen bg-cover md:bg-[url('/hero1-bg.png')] bg-none "
+        id="hero"
       >
         <div
           style={{
-            backgroundImage: "url('/hero2-bg.png')",
             backgroundPosition: "center center",
           }}
-          className="h-full relative"
+          className="h-full relative md:bg-[url('hero2-bg.png')] bg-none"
         >
-          <div className="absolute top-1/2 left-20 w-1/3  transform  -translate-y-1/2">
+          <div className="absolute sm:top-2/3 top-[22rem] sm:left-20 left-10 md:w-1/3 w-3/4  transform  -translate-y-1/2">
             <motion.h1
               initial={{ transform: "translateX(100px)", opacity: 0 }}
               animate={{ transform: "translateX(0px)", opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-6xl font-extrabold text-color-body leading-[1.2] "
+              className="xl:text-6xl lg:text-5xl  text-4xl font-extrabold text-color-body leading-[1.2] "
             >
               Content is <span className="text-color-theme"> fire </span> Social
               media is <span className="text-color-theme"> gasoline. </span>
@@ -46,7 +45,7 @@ const Hero: React.FC = () => {
               initial={{ transform: "translateY(100px)", opacity: 0 }}
               animate={{ transform: "translateY(0px)", opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-sm text-color-text mt-8 leading-6"
+              className="text-sm text-color-text  mt-8 leading-6"
             >
               In an age where everything and everyone is linked through networks
               of glass and air organization, government agency, country are an
@@ -80,7 +79,7 @@ const Hero: React.FC = () => {
             </motion.div>
           </div>
         </div>
-        <div className="absolute flex items-center gap-3 bottom-3 right-32">
+        <div className="absolute sm:flex items-center gap-3 bottom-3 hidden  right-32">
           <span className="hover:bg-color-theme p-2 cursor-pointer transition-all inline-block rounded-full hover:text-white text-color-text">
             <FaFacebookF size={18} />
           </span>
@@ -94,7 +93,7 @@ const Hero: React.FC = () => {
             <FaInstagram size={18} />
           </span>
         </div>
-      </div>
+      </section>
     </>
   );
 };

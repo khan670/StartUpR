@@ -14,21 +14,23 @@ const App: React.FC = () => {
   return (
     <>
       <Navigation />
-      <Hero />
-      <About />
-      <div className="relative bg-[#FFF7F7] my-5 py-10">
-        <img src="/wave.svg" className="w-full absolute bottom-0" />
-        <img
-          src="/waveUp.svg"
-          className="w-full absolute top-0 transform rotate-180"
-        />
-        <Product />
-        <Services />
-        <Team />
-      </div>
-      <WorkFlow />
-      <Testimonial />
-      <Inspiration />
+      <main>
+        <Hero />
+        <About />
+        <div className="relative bg-[#FFF7F7] my-5 py-10">
+          <img src="/wave.svg" className="w-full absolute bottom-0" />
+          <img
+            src="/waveUp.svg"
+            className="w-full absolute top-0 transform rotate-180"
+          />
+          <Product />
+          <Services />
+          <Team />
+        </div>
+        <WorkFlow />
+        <Testimonial />
+        <Inspiration />
+      </main>
       <Footer />
     </>
   );
