@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Button from "../Button";
 const Inspiration: React.FC = () => {
   return (
-    <section className="mt-44 bg-[url('/map.png')] bg-no-repeat bg-center py-16 relative z-30 ">
+    <section className="sm:mt-36 mt-10 bg-[url('/map.png')] bg-no-repeat bg-center py-16 relative z-30 ">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0, transform: "translateY(20px)" }}

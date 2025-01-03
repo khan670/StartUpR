@@ -3,7 +3,7 @@ import Logo from "../Logo";
 import { NavigationData } from "../../data/Navigation";
 import Button from "../Button";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 const Navigation: React.FC = () => {
   const { scrollY } = useScroll();
@@ -66,13 +66,19 @@ const Navigation: React.FC = () => {
         />
       </motion.header>
       <div
-        className={`w-2/3 transition-all duration-300  fixed top-0 ${
+        className={`w-2/3 transition-all duration-700 fixed top-0 ${
           isOpen ? "left-0" : "-left-full"
         } bg-color-body h-full z-50`}
       >
-        <ul className="flex flex-col gap-2 text-sm text-color-footer ">
+        <RxCross1
+          size={20}
+          className="text-color-footer absolute top-2 right-2"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+        <ul className="flex flex-col mt-8 gap-2 text-sm text-color-footer ">
           {NavigationData.map((item) => (
             <li
+              onClick={() => setIsOpen(!isOpen)}
               key={item.id}
               className="border-b-[1px] border-b-color-footer font-semibold uppercase py-2 px-3"
             >

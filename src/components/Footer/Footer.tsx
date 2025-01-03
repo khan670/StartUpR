@@ -10,7 +10,7 @@ import SectionHeading from "../SectionHeading";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-color-footer py-32">
+    <footer className="relative bg-color-footer sm:py-32 py-20">
       <img src="/waves-top.png" alt="" className="w-full absolute top-0" />
       <img
         src="/waves-bottom.png"
