@@ -17,7 +17,7 @@ const Testimonial: React.FC = () => {
     verticalSwiping: true,
     swipeToSlide: true,
     arrows: false,
-    touchMove: true, // Ensure touch gestures are enabled
+    touchMove: true,
   };
   return (
     <section
@@ -33,7 +33,7 @@ const Testimonial: React.FC = () => {
         }}
         className=" lg:w-1/2 w-full flex flex-col gap-5"
       >
-        <h3 className="text-sm font-medium tracking-wider text-color-theme flex gap-1 items-center ">
+        <h3 className="sm:text-sm text-xs font-medium tracking-wider text-color-theme flex gap-1 items-center ">
           Testimonials <img src="/divider.png" alt="" />
         </h3>
         <SectionHeading
@@ -42,14 +42,12 @@ const Testimonial: React.FC = () => {
         />
         <div className="flex gap-5 items-center">
           <IoIosArrowRoundBack
-            size={50}
             onClick={() => ref?.current?.slickPrev()}
-            className="text-gray-300 hover:text-color-theme  transition-all duration-300  cursor-pointer"
+            className="text-gray-300 hover:text-color-theme  transition-all duration-300  cursor-pointer sm:text-5xl text-3xl"
           />
           <IoIosArrowRoundForward
-            size={50}
             onClick={() => ref?.current?.slickNext()}
-            className="text-gray-300  hover:text-color-theme transition-all duration-300  cursor-pointer"
+            className="text-gray-300  hover:text-color-theme transition-all duration-300  cursor-pointer sm:text-5xl text-3xl"
           />
         </div>
       </motion.div>
@@ -57,7 +55,7 @@ const Testimonial: React.FC = () => {
         <Slider className=" w-full mt-5 lg:mt-0" {...settings} ref={ref}>
           {testimonialsData.map((item) => (
             <div className="flex flex-col items-center w-full">
-              <div className="w-24 h-24 overflow-hidden shadow-custom-shadow relative top-16 rounded-full border-4 border-color-theme ml-2">
+              <div className="sm:w-24 w-20 h-20 sm:h-24 overflow-hidden shadow-custom-shadow relative top-16 rounded-full border-4 border-color-theme ml-2">
                 <img
                   src={item.image}
                   className="rounded-full object-cover w-full h-full"
@@ -72,7 +70,7 @@ const Testimonial: React.FC = () => {
                 }}
                 className="bg-no-repeat shadow-custom-shadow bg-white py-16 sm:px-10 px-5 sm:w-4/5 w-full  rounded-custom-radius mt-5 "
               >
-                <p className="text-sm text-color-text leading-[1.5]">
+                <p className="sm:text-sm text-sm text-color-text leading-[1.5]">
                   {item.feedback}
                 </p>
               </div>

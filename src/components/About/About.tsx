@@ -27,17 +27,17 @@ const About: React.FC = () => {
         className="bg-[url('/quote.png')] bg-no-repeat lg:w-1/2 w-full flex flex-col gap-5  "
         style={{ backgroundPosition: "left bottom" }}
       >
-        <h2 className="text-color-theme uppercase text-sm font-medium flex gap-1 items-center">
+        <h2 className="text-color-theme uppercase sm:text-sm text-xs font-medium flex gap-1 items-center">
           Company profile <img src="/divider.png" alt="" />
         </h2>
         <SectionHeading text="Content marketing is a commitment, not a campaign" />
-        <p className="text-base text-color-text leading-[1.6] ">
+        <p className="sm:text-base text-sm  text-color-text leading-[1.6] ">
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.
           Why not can money's in that office, right? If she start giving means
           some bullshit.
         </p>
-        <h1 className="text-color-body font-medium ">
+        <h1 className="text-color-body sm:text-base text-sm font-medium">
           <span className="inline-block w-[10%] h-[2px] mt-8 bg-color-theme"></span>{" "}
           Rayan khan,<span className="text-color-text ">StartUpR CEO</span>
         </h1>

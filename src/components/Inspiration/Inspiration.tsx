@@ -14,7 +14,7 @@ const Inspiration: React.FC = () => {
         }}
         className="flex flex-col items-center gap-5"
       >
-        <h1 className="text-center sm:text-5xl text-3xl text-color-body font-bold md:w-3/5 w-full leading-[1.3]">
+        <h1 className="text-center sm:text-5xl text-2xl text-color-body font-bold md:w-3/5 w-full leading-[1.3]">
           Let’s create creativity inspiration{" "}
           <span className="text-color-theme"> projects </span> together
         </h1>

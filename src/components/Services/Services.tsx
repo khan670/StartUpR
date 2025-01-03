@@ -19,11 +19,11 @@ const Services: React.FC = () => {
         }}
         className=" lg:w-1/2 w-full flex flex-col gap-6 items-start"
       >
-        <h3 className="text-color-theme text-sm font-medium flex gap-1 items-center">
+        <h3 className="text-color-theme sm:text-sm text-xs font-medium flex gap-1 items-center">
           OUR SERVICES <img src="/divider.png" alt="" />
         </h3>
         <SectionHeading text="People don’t buy what you do, they buy why you do it." />
-        <p className=" text-color-text">
+        <p className=" text-color-text text-sm sm:text-base">
           Why money's in that office, right? If she start giving means some
           bullet about ain't there, and we got to go placing else and get it.
         </p>
@@ -48,7 +48,7 @@ const Services: React.FC = () => {
               key={index}
               className={`${
                 index === 1 || index === 3 ? "sm:relative top-12" : ""
-              } flex flex-col items-center gap-3`}
+              } flex flex-col items-center sm:gap-3 gap-2`}
             >
               <span
                 style={{ backgroundColor: `#${item.color}` }}
@@ -56,10 +56,10 @@ const Services: React.FC = () => {
               >
                 <Icon size={30} />
               </span>
-              <h2 className="text-xl text-color-body font-bold">
+              <h2 className="sm:text-xl text-lg text-color-body font-bold">
                 {item.heading}
               </h2>
-              <p className="text-base text-color-text text-center">
+              <p className="sm:text-base text-sm text-color-text text-center">
                 {item.text}
               </p>
             </motion.div>

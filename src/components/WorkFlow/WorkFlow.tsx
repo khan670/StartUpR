@@ -16,7 +16,9 @@ const WorkFlow: React.FC = () => {
         }}
         className="flex justify-center flex-col items-center gap-2  text-center relative z-30"
       >
-        <h3 className="text-sm text-color-theme font-semibold">WORKFLOW</h3>
+        <h3 className="sm:text-sm text-xs text-color-theme font-semibold">
+          WORKFLOW
+        </h3>
         <SectionHeading
           text=" People don’t buy what you do, they buy why you do it."
           className="md:w-2/3 w-full px-3 md:px-0 -mt-2"
@@ -49,9 +51,9 @@ const WorkFlow: React.FC = () => {
                 <span className="absolute top-1  -right-1 inline-block text-white opacity-30 font-bold text-7xl">
                   {item.number}
                 </span>
-                <Icon className="text-white relative z-30" size={50} />
+                <Icon className="text-white relative z-30 sm:text-5xl text-4xl" />
               </div>
-              <span className="inline-block  text-base text-color-body font-bold text-center">
+              <span className="inline-block  sm:text-base text-sm text-color-body font-bold text-center">
                 {item.heading}
               </span>
             </motion.div>

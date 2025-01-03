@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
               initial={{ transform: "translateX(100px)", opacity: 0 }}
               animate={{ transform: "translateX(0px)", opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="xl:text-6xl lg:text-5xl  text-4xl font-extrabold text-color-body leading-[1.2] "
+              className="xl:text-6xl lg:text-5xl  sm:text-4xl text-3xl font-extrabold text-color-body leading-[1.2] "
             >
               Content is <span className="text-color-theme"> fire </span> Social
               media is <span className="text-color-theme"> gasoline. </span>
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               initial={{ transform: "translateY(100px)", opacity: 0 }}
               animate={{ transform: "translateY(0px)", opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-sm text-color-text  mt-8 leading-6"
+              className="sm:text-sm text-xs text-color-text  sm:mt-8 mt-5 leading-6"
             >
               In an age where everything and everyone is linked through networks
               of glass and air organization, government agency, country are an
